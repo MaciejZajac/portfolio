@@ -12,7 +12,7 @@ const HomePage = () => {
         </div>
         <br />
         <p style={{ fontSize: 20 }}>
-          One year of experience in building <br />{" "}
+          One year of experience in building <br />
           <span style={{ textDecoration: "underline" }}>amazing websites</span>.
         </p>
         <br />

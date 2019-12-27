@@ -1,8 +1,11 @@
 @import "./reset.scss";
-
+* {
+  box-sizing: border-box;
+}
 .structure {
   width: 100vw;
   height: 100vh;
+  margin-top: 12px;
 
   // &::before {
   //   content: "";
@@ -76,7 +79,7 @@
   &__photo {
     width: 400px;
     height: 500px;
-    background-image: url(./profilowe.jpg);
+    background-image: url(./images/profilowe.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -145,4 +148,34 @@
   &:hover {
     color: white;
   }
+}
+
+.bg-vehis {
+  width: 250px;
+  height: 250px;
+  background-image: url(./images/vehis.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.bg-offers {
+  width: 250px;
+  height: 250px;
+  background-image: url(./images/offers.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.bg-mentor {
+  width: 250px;
+  height: 250px;
+  background-image: url(./images/mentorscreen.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 }

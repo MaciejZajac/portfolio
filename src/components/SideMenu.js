@@ -11,6 +11,9 @@ const SideMenu = () => {
         <li>
           <Link to="/projects">Projects</Link>
         </li>
+        <li>
+          <Link to="/faq">FAQ</Link>
+        </li>
       </ul>
     </aside>
   );
