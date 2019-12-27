@@ -1,0 +1,127 @@
+@import "./reset.scss";
+
+.structure {
+  width: 100vw;
+  height: 100vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 65vw;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 35vw;
+    background-color: #0000cdc0;
+  }
+}
+
+.homePage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: calc(100vh - 40px);
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+  }
+  &__photo {
+    width: 400px;
+    height: 500px;
+    background-image: url(./profilowe.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0px 0px 14px black;
+    transform: translate(100px, -60px);
+  }
+
+  &__contact {
+    font-size: 30px;
+    height: calc(100vh - 40px);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__react {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  &__btn {
+    padding: 15px 25px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+
+    transition: 0.25s ease-in-out;
+    &:hover {
+      color: white;
+      background-color: #0000cdc0;
+    }
+  }
+}
+.asomePage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__information {
+    font-size: 30px;
+  }
+  &__button {
+    outline: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 15px;
+    transition: 0.25s ease-in-out;
+    &:hover {
+      color: white;
+      background-color: #0000cdc0;
+    }
+  }
+
+  &__menu {
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.border-right {
+  border-right: 1px solid #f2f2f2;
+}
