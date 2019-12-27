@@ -4,6 +4,29 @@
   width: 100vw;
   height: 100vh;
 
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   z-index: -1;
+  //   top: 0;
+  //   left: 0;
+  //   height: 100vh;
+  //   width: 65vw;
+  // }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   z-index: -1;
+  //   top: 0;
+  //   right: 0;
+  //   height: 100vh;
+  //   width: 40vw;
+  //   background-color: #0000cdc0;
+  // }
+}
+
+.bg-purple {
   &::before {
     content: "";
     position: absolute;
@@ -21,17 +44,25 @@
     top: 0;
     right: 0;
     height: 100vh;
-    width: 35vw;
+    width: 40vw;
     background-color: #0000cdc0;
   }
 }
 
-.homePage {
+.home {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
+  width: 100%;
+  background-image: linear-gradient(
+    145deg,
+    white,
+    white 650px,
+    #0000cdc0 650px,
+    #0000cdc0 1050px,
+    white 1050px
+  );
   &__data {
     display: flex;
     flex-direction: column;
@@ -53,13 +84,14 @@
     transform: translate(100px, -60px);
   }
 
-  &__contact {
+  &__spec {
     font-size: 30px;
     height: calc(100vh - 40px);
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 40px;
   }
   &__react {
     font-size: 60px;
@@ -77,33 +109,14 @@
       background-color: #0000cdc0;
     }
   }
-}
-.asomePage {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-
-  &__information {
-    font-size: 30px;
+  &__name {
+    color: white;
+    text-shadow: 0px 0px 5px #0000cdc0;
   }
-  &__button {
-    outline: none;
-    cursor: pointer;
-    padding: 15px 25px;
-    border-radius: 25px;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-right: 15px;
-    transition: 0.25s ease-in-out;
-    &:hover {
-      color: white;
-      background-color: #0000cdc0;
-    }
-  }
-
-  &__menu {
+  &__contact {
+    color: #0000cdc0;
+    text-shadow: 0px 0px 5px white;
+    font-weight: 600;
   }
 }
 
@@ -124,4 +137,12 @@
 
 .border-right {
   border-right: 1px solid #f2f2f2;
+}
+
+.is-purple {
+  background-color: #0000cdc0;
+  color: white;
+  &:hover {
+    color: white;
+  }
 }
