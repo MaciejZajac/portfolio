@@ -1,126 +1,100 @@
 import React from "react";
+import Button from "./Button";
 
 const Projects = () => {
+  const links = {
+    github: "https://github.com/MaciejZajac/JobOffers",
+    vehis: "https://sellcar.nuwo.pl/",
+    jobOffers: "https://shrouded-hollows-06306.herokuapp.com/",
+    jobOffersGithub: "https://github.com/MaciejZajac/JobOffers",
+    mentor: "https://mentor-website.netlify.com/",
+    mentorGithub: "https://bitbucket.org/maciek1997/mentor-website/src/master/"
+  };
   return (
     <div className="container">
       <div className="columns" style={{ height: "50%", margin: 0 }}>
         <div
-          className="column"
+          className="column flex flex--column flex-justify--center flex-align--center"
           style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
             borderBottom: "2px solid #0000cdc0"
           }}
         >
-          <div className="bg-vehis" />
+          <div className="bg bg-vehis" />
           <div className="columns is-centered">
             <div className="column is-three-quarters ">
-              Projekt tworzony dla <strong>obecnej</strong> firmy.
-              <br />
-              <br />
-              Jestem jedyną osobą odpowiedzialną za tworzenie warstwy
-              frontendowej aplikacji.
-              <br />
-              <br />
-              <a
-                href="https://sellcar.nuwo.pl/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button type="button" className="button is-rounded">
-                  Online
-                </button>
+              <div className="content">
+                Projekt tworzony dla <strong>obecnej</strong> firmy. Jestem
+                jedyną osobą odpowiedzialną za tworzenie warstwy frontendowej
+                aplikacji.
+              </div>
+              <a href={links.vehis} target="_blank" rel="noopener noreferrer">
+                <Button text="Online" />
               </a>
             </div>
           </div>
         </div>
         <div
-          className="column"
+          className="column flex flex--column flex-justify--center flex-align--center"
           style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
             backgroundColor: "#0000cdc0",
             color: "white",
             borderBottom: "2px solid white"
           }}
         >
-          <div className="bg-offers" />
+          <div className="bg bg-offers" />
           <div className="columns is-centered">
             <div className="column is-three-quarters ">
-              Projekt, który w założeniu{" "}
-              <span style={{ textDecoration: "underline" }}>będzie</span>{" "}
-              job-boardem dla programistów. Samodzielnie piszę i backend i
-              frontend.
-              <br />
-              <br />
+              <div className="content">
+                Projekt, który w założeniu{" "}
+                <span style={{ textDecoration: "underline" }}>będzie</span>{" "}
+                job-boardem dla programistów. Samodzielnie piszę i backend i
+                frontend.
+              </div>
               <a
-                href="https://shrouded-hollows-06306.herokuapp.com/"
+                href={links.jobOffers}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button
-                  type="button"
-                  className="button is-rounded"
-                  style={{ marginRight: "15px" }}
-                >
-                  Online
-                </button>
+                <Button text="Online" />
               </a>
               <a
-                href="https://github.com/MaciejZajac/JobOffers"
+                href={links.jobOffersGithub}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button type="button" className="button is-rounded">
-                  Github
-                </button>
+                <Button text="Github" />
               </a>
             </div>
           </div>
         </div>
       </div>
       <div className="columns" style={{ height: "50%", margin: 0 }}>
-        <div
-          className="column"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center"
-          }}
-        >
-          <div className="bg-mentor" />
+        <div className="column flex flex--column flex-justify--center flex-align--center">
+          <div className="bg bg-mentor" />
           <div className="columns is-centered">
             <div className="column is-three-quarters ">
-              Projekt strony dla kółka naukowego.
-              <br />
+              <div className="content">
+                Projekt strony dla kółka naukowego. Zwykły html i css.
+              </div>
+              <a href={links.mentor} target="_blank" rel="noopener noreferrer">
+                <Button text="Online" />
+              </a>
               <a
-                href="https://sellcar.nuwo.pl/"
+                href={links.mentorGithub}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button type="button" className="button is-rounded">
-                  Online
-                </button>
+                <Button text="Github" />
               </a>
             </div>
           </div>
         </div>
         <div
-          className="column"
+          className="column flex flex--column flex-justify--center flex-align--center"
           style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
             backgroundColor: "#0000cdc0"
           }}
-        >
-          Czwarty projekt
-        </div>
+        ></div>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <div className="structure">
-        <div className="columns is-desktop">
+        <div className="columns is-desktop" style={{ height: "100%" }}>
           <div
             className="column is-2"
             style={{ paddingBottom: 0, paddingRight: 0 }}

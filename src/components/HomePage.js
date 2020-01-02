@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const HomePage = () => {
   return (
@@ -13,17 +14,13 @@ const HomePage = () => {
         <br />
         <p style={{ fontSize: 20 }}>
           One year of experience in building <br />
-          <span style={{ textDecoration: "underline" }}>amazing websites</span>.
+          websites
         </p>
         <br />
         <div>
-          <button type="button" className="button is-rounded is-purple">
-            CV
-          </button>
+          {/* <Button text="CV" classes="is-purple" /> */}
           <Link to="/projects">
-            <button type="button" className="button is-rounded is-purple">
-              Projects ->
-            </button>
+            <Button text="Projects" classes="is-purple" />
           </Link>
         </div>
       </div>
@@ -33,7 +30,12 @@ const HomePage = () => {
         <div className="home__contact">
           <div>
             <div className="bold">Email: </div>
-            maciej.zajac.praca@gmail.com
+            <a
+              href="mailto:maciej.zajac.praca@gmail.com"
+              style={{ textDecoration: "none", color: "#0000cdc0" }}
+            >
+              maciej.zajac.praca@gmail.com
+            </a>
           </div>
           <br />
           <div>

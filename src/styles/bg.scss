@@ -1,0 +1,51 @@
+.bg-purple {
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 65vw;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 40vw;
+    background-color: #0000cdc0;
+  }
+}
+
+.bg {
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.bg-vehis {
+  background-image: url(../images/vehis.png);
+}
+
+.bg-offers {
+  background-image: url(../images/offers.png);
+}
+
+.bg-mentor {
+  background-image: url(../images/mentorscreen.png);
+}
+
+.is-purple {
+  background-color: #0000cdc0;
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
