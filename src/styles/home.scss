@@ -1,5 +1,5 @@
 .home {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -17,8 +17,9 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    height: calc(100vh - 40px);
+    height: 100%;
     padding: 20px;
+    padding-right: 35px;
     font-size: 20px;
     color: white;
   }
@@ -35,7 +36,7 @@
 
   &__spec {
     font-size: 30px;
-    height: calc(100vh - 40px);
+    height: 100%;
     flex-grow: 1;
     display: flex;
     flex-direction: column;

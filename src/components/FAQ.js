@@ -48,19 +48,22 @@ export default Faq;
 
 const dummyData = [
   {
+    title: "Czy pracuje Pan obecnie w Scrumie?",
+    content:
+      "Od kilku miesięcy w firmie został wprowadzony scrum. Codziennie standupy o 10.00. Raz w tygodniu meeting z product Ownerem od klienta."
+  },
+  {
     title: "Jakie technologie Pan zna?",
     content:
       "Moim stackiem technologicznym jest: React, Javascript, Sass, Gatsby, Webpack, CSS3, HTML5, TypeScript, Redux/MobX. Trudno zapamiętać wszystkie technologie. "
   },
   {
-    title: "Na jakim etacie Pan pracuje obecnie?",
-    content:
-      "Obecnie pracuje na etacie 7/8. Zacząłem w lutym jak jeszcze byłem na studiach stacjonarnych. Na drugi stopień wybieram się na niestacjonarne - mogę pracować na pełen etat"
+    title: "Na jaki etat Pan może pracować?",
+    content: "Pełen etat."
   },
   {
     title: "Dlaczego chcesz u nas pracować?",
-    content:
-      "Aplikuję jedynie do firm które w jakiś sposób są interesujące. Najważniejszą rzeczą dla mnie jest możliwość rozwoju. Jeśli otrzymaliście moje CV, musiałem zobaczyć możliwość podniesienia swoich umiejętności."
+    content: "Aplikuję do firm które w których widzę potencjał do rozwoju."
   },
   {
     title: "Jaką wartość wniesiesz do firmy?",
@@ -68,7 +71,6 @@ const dummyData = [
   },
   {
     title: "Czy interesuje się Pan czymś poza Front-endem?",
-    content:
-      "Próbuję coś uczyć się z back-endu. Próbowałem przerobić tutorial z Ruby on Rails jednak w ogóle nie czuję tego języka, może tutorial do mnie nie trafił. Nie przekreślam tego języka. O wiele więcej do mnie przemawia Node.js."
+    content: "Rozwijam się w kierunku Fullstack Javascript developer."
   }
 ];
